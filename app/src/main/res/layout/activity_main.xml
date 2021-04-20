@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:id="@+id/add_item_section_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/new_task_et_padding">
+        <EditText
+            android:id="@+id/new_task_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="@string/item_content_hint"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/btn_set_ll"
+        android:layout_below="@id/add_item_section_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/add_btn_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_btn"
+            android:layout_margin="@dimen/btn_margin"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/rm_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rm_btn_val"
+            android:layout_margin="@dimen/btn_margin"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save_btn_val"
+            android:layout_margin="@dimen/btn_margin"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/refresh_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/refresh_btn_val"
+            android:layout_margin="@dimen/btn_margin"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:background="@android:color/holo_green_light"
+        android:id="@+id/todoItemRV"
+        android:layout_width="match_parent"
+        android:layout_below="@id/btn_set_ll"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="1dp"
+        android:layout_marginTop="1dp"/>
+</RelativeLayout>

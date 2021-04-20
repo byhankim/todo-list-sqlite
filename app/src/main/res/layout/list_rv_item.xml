@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingLeft="@dimen/item_checkbox_left_margin"
+    android:layout_height="wrap_content">
+
+
+    <CheckBox
+        android:id="@+id/item_toggle_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/toggle_cb_padding_left"
+        tools:ignore="RtlSymmetry"/>
+
+    <TextView
+        android:id="@+id/item_content_tv"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/item_toggle_cb"
+        android:layout_toStartOf="@id/item_remove_btn"
+        tools:text="여기에 텍스트 입력"/>
+
+    <Button
+        android:id="@+id/item_remove_btn"
+        android:layout_width="@dimen/remove_item_btn_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="X" />
+</RelativeLayout>

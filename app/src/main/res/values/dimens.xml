@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_text_size">22sp</dimen>
+    <dimen name="list_overall_margin">15dp</dimen>
+    <dimen name="btn_set_ll_padding">4dp</dimen>
+    <dimen name="btn_margin">2dp</dimen>
+    <dimen name="toggle_cb_padding_left">10dp</dimen>
+    <dimen name="item_checkbox_left_margin">4dp</dimen>
+    <dimen name="remove_item_btn_width">40dp</dimen>
+    <dimen name="new_task_et_padding">5dp</dimen>
+</resources>

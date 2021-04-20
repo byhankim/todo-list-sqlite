@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">눈칫밥 먹으며 만든 ToDo List</string>
+    <string name="add_btn">추가</string>
+    <string name="rm_btn_val">삭제</string>
+    <string name="refresh_btn_val">새로고침</string>
+    <string name="save_btn_val">서버에 저장</string>
+    <string name="item_content_hint">여기에 텍스트 입력</string>
+    <string name="checkbox">CheckBox</string>
+    <string name="task_text_hint">할 일을 입력하세요</string>
+</resources>
